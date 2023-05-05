@@ -1,0 +1,2584 @@
+.main-nav {
+    color: white;
+    background-color: rgb(17, 17, 207);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 16px;
+}
+
+.nav-links li a:hover {
+    color: rgb(17, 17, 207);
+    background-color: white;
+    transition: background-color o.5s ease;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+@media (max-width: 670px) {
+    .main-nav {
+        height: 50px;
+    }
+    .nav-toggle {
+        display: block;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 30px;
+        height: 3px;
+        margin: 5px;
+        background-color: white;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        background-color: #060331;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+
+    .nav-links li a {
+        width: 100%;
+
+    }
+    .active {
+        display: flex;
+    }
+}
+
+
+h1 {
+    border: 1px solid;
+    width: 300px;
+    padding: 25px;
+    text-align: center;
+    border-color: black;
+    text-shadow: 0 0 5px yellow, 0px -5px 5px red;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 10px 10px 5px #666666;
+    background-color: black;
+    color: white;
+    position: sticky;
+    left: 450px;
+    animation: myRotateAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myRotateAnimation {
+    100%{transform: rotateZ(360deg);}
+}
+
+
+h2{
+    background: purple;
+    text-align: center;
+    margin: 0px;
+    display: inline-block;
+    animation: myAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes myAnimation {
+    1%{background-color: red;}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    50%{background-color: blue;}
+    100%{background-color: purple;}
+}
+
+
+img {
+    float: left;
+}
+#photo2 {
+    float: left;
+}
+
+.tesla {
+    width: 800px;
+    border-radius: 50px;
+    animation: myRotateTesla;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myRotateTesla {
+    100%{transform: rotateY(360deg);}
+    100%{transform: rotateX(360deg);}
+    100%{transform: rotateZ(360deg);}
+
+}
+
+#photo5 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    animation: myScale00026;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myScale00026 {
+50% {transform: scale(0.9,1);}
+}
+
+#photo7 {
+    position: relative;
+    left:150px;
+    animation: myScale007;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    }
+        
+@keyframes myScale007 {
+    50% {transform: scale(0.5,0.5);}
+}
+#photom2 {
+    position: relative;
+    float: right;
+    width: 400px;
+    animation: myScale00787;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    }
+        
+@keyframes myScale00787 {
+    50% {transform: scale(0.9,0.5);}
+}
+
+#robot2 {
+    position: relative;
+    float: right;
+    width: 400px;
+    animation: myScale00788;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    }
+        
+@keyframes myScale00788 {
+    50% {transform: scale(0.9,0.5);}
+}
+
+#t2 {
+    background: purple;
+    text-align: center;
+    margin: 0px;
+    display: inline-block;
+    animation: myAnima;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes myAnima {
+    1%{background-color: beige;}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    50%{background-color: blue;}
+    100%{background-color: purple;}
+}
+
+#t3 {
+    background: purple;
+    text-align: center;
+    margin: 0px;
+    display: inline-block;
+    animation: myAnima2;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes myAnima2 {
+    1%{background-color: beige;}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    50%{background-color: blue;}
+    100%{background-color: purple;}
+}
+
+#t4 {
+    background: purple;
+    text-align: center;
+    margin: 0px;
+    display: inline-block;
+    animation: myAnima3;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes myAnima3 {
+    1%{background-color: beige;}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    50%{background-color: blue;}
+    100%{background-color: purple;}
+}
+
+#t5 {
+    background: purple;
+    text-align: center;
+    margin: 0px;
+    display: inline-block;
+    animation: myAnima4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myAnima4 {
+    1%{background-color: beige;}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    50%{background-color: blue;}
+    100%{background-color: purple;}
+}
+
+#t6 {
+    background: purple;
+    text-align: center;
+    margin: 0px;
+    display: inline-block;
+    animation: myAnima9990;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myAnima9990 {
+    1%{background-color: beige;}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    50%{background-color: blue;}
+    100%{background-color: purple;}
+}
+
+
+#title1 {
+    text-align: left;
+    background: rgb(41, 40, 41);
+    position: relative;
+    left: 60px;
+    top: 50px;
+    margin: 0px;
+    display: inline-block;
+    animation: myScale6;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes myScale6 {
+    50% {transform: scale(0.5,0.5);}
+
+}
+@keyframes myRotateAnima4 {
+    100%{transform: rotateX(180deg);}
+}
+
+
+#title2 {
+    text-align: center;
+}
+
+#title6 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#title7{
+    text-align: center;
+    font-family: 'Courier New', Courier;
+}
+
+#photo2 {
+    position: relative;
+    left: 100px;
+}
+
+#img3{
+position: relative;
+left:300px;
+animation: myScale;
+animation-duration: 8s;
+animation-iteration-count: infinite;
+}
+
+@keyframes myScale {
+    50% {transform: scale(0.5,0.5);}
+}
+
+#img777 {
+    width: 400px;
+}
+
+#img9 {
+position: relative;
+left: 150px;
+width: 1000px;
+animation: myScale00025;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
+
+@keyframes myScale00025 {
+50% {transform: scale(0.9,1);}
+}
+
+#img4 {
+position: relative;
+left: 150px;
+animation: myScale4;
+animation-duration: 8s;
+animation-iteration-count: infinite;
+}
+
+@keyframes myScale4 {
+    50% {transform: scale(0.5,0.5);}
+}
+
+.declaratie{
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px 5px white;
+}
+
+.decl_d {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px 5px #666666;
+ }
+
+.declaratie_t {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    text-align: center;
+    box-shadow: 10px 10px 5px white;
+
+}
+.text_y{
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px 5px #666666;
+}
+
+#button1, #button2, #button3 {
+    color: white;
+    text-decoration: none;
+    background-color: #666666; 
+    text-align: center;
+    border-right: 1px solid black;
+    width: 100px; 
+    height: 50px;
+    animation: myScale4;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes myScale4 {
+    50% {transform: scale(0.5,0.5);}
+
+}
+
+#button1, #button2, #button3, no span :hover {
+    background-color: black;
+}
+
+.about_musk {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px 5px #666666;
+}
+
+.musk_e {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px 5px #666666;  
+}
+
+.decl_musk {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px 5px #666666;  
+}
+
+.e_m {
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    box-shadow: 10px 10px 5px #666666;    
+}
+
+#t09 {
+    border: 1px solid;
+    width: 300px;
+    padding: 25px;
+    text-align: center;
+    border-color: black;
+    text-shadow: 0 0 5px yellow, 0px -5px 5px red;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 10px 10px 5px #4e0d47;
+    background-color: black;
+    color: white;
+    position: relative;
+    left: 520px;
+    animation: myScale09;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myScale09 {
+    50% {transform: scale(0.5,0.5);}
+
+}
+
+#p08 {
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 10px 10px 5px #fe039e;  
+}
+
+#p0016 {
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 10px 10px 5px #fe039e;  
+}
+
+#p0017 {
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 10px 10px 5px #fe039e;  
+}
+
+#p0018 {
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 10px 10px 5px #fe039e;  
+}
+
+#p0019 {
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 10px 10px 5px #fe039e;  
+}
+
+#p0020 {
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 10px 10px 5px #fe039e;  
+}
+
+#p0021 {
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 10px 10px 5px #fe039e; 
+}
+
+#p0022 {
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 10px 10px 5px #fe039e;
+}
+
+#p0023 {
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 10px 10px 5px #fe039e;
+}
+
+#p0024 {
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 10px 10px 5px #fe039e;
+}
+
+#p0025 {
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 10px 10px 5px #fe039e;
+}
+#p009 {
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 10px 10px 5px #fe039e;  
+}
+#p0010 {
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 10px 10px 5px #fe039e;  
+}
+#p0011 {
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 10px 10px 5px #fe039e;  
+}
+
+#p0012 {
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 10px 10px 5px #fe039e;  
+}
+
+#p0013 {
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 10px 10px 5px #fe039e;  
+}
+
+#p0014 {
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 10px 10px 5px #fe039e;  
+}
+
+#p0015 {
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 10px 10px 5px #fe039e;  
+}
+#v1{
+    position: relative;
+    width: 460px;
+    animation: myScale10;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myScale10 {
+    50% {transform: scale(0.5,0.5);}
+}
+
+#video1 {
+    position: relative;
+    left: 350px;
+    width: 600px;
+}
+
+
+#p99 {
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 10px 10px 5px #48064e;  
+}
+#t00 {
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 10px 10px 5px #55013d;  
+}
+#img_09 {
+    position: relative;
+    width: 600px;
+    animation: myScale999;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes myScale999 {
+    50% {transform: scale(0.2,0.2);}
+}
+
+#img_090 {
+    position: relative;
+    width: 500px;
+    animation: myScale9991;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes myScale9991 {
+    50% {transform: scale(0.2,0.2);}
+}
+#img_0009 {
+    position: relative;
+    width: 490px;
+    animation: myScale9999;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myScale9999 {
+    50% {transform: scale(0.2,0.2);}
+}
+
+#p98 {
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 10px 10px 5px #08ff67;  
+}
+
+#paragraph1 {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgb(148, 91, 148);
+}
+
+#paragraph2 {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgb(139, 16, 80);
+}
+
+#title8 {
+    background: purple;
+    position: relative;
+    left: 450px;
+    margin: 0px;
+    display: inline-block;
+    animation: myAnimation80;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes myAnimation80 {
+    1%{background-color: rgb(113, 44, 100);}
+    20%{background-color: rgb(199, 84, 167);}
+    40%{background-color: rgb(155, 80, 151);}
+    60%{background-color: rgb(192, 13, 132);}
+    50%{background-color: rgb(215, 148, 195);}
+    100%{background-color: purple;}
+
+}
+
+#title008 {
+    background: purple;
+    position: relative;
+    left: 350px;
+    margin: 0px;
+    display: inline-block;
+    animation: myAnimation008;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes myAnimation008 {
+    1%{background-color: rgb(113, 44, 100);}
+    20%{background-color: rgb(199, 84, 167);}
+    40%{background-color: rgb(155, 80, 151);}
+    60%{background-color: rgb(192, 13, 132);}
+    50%{background-color: rgb(215, 148, 195);}
+    100%{background-color: purple;}
+
+}
+
+#img008{
+    float: right;
+    width: 200px;
+}
+
+#title009 {
+    background: purple;
+    position: relative;
+    left: 470px;
+    margin: 0px;
+    display: inline-block;
+    animation: myAnimation009;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myAnimation009 {
+    1%{background-color: rgb(113, 44, 100);}
+    20%{background-color: rgb(199, 84, 167);}
+    40%{background-color: rgb(155, 80, 151);}
+    60%{background-color: rgb(192, 13, 132);}
+    50%{background-color: rgb(215, 148, 195);}
+    100%{background-color: purple;}
+
+}
+
+#title070 {
+    background: purple;
+    position: relative;
+    left: 370px;
+    margin: 0px;
+    display: inline-block;
+    animation: myAnimation070;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes myAnimation070 {
+    1%{background-color: rgb(113, 44, 100);}
+    20%{background-color: rgb(199, 84, 167);}
+    40%{background-color: rgb(155, 80, 151);}
+    60%{background-color: rgb(192, 13, 132);}
+    50%{background-color: rgb(215, 148, 195);}
+    100%{background-color: purple;}
+}
+#r070{
+    float: right;
+    width: 112px;
+    animation: myScale070;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myScale070 {
+    50% {transform: scale(3,1);}
+}
+
+#p060 {
+    text-align: center;
+    border: 2px solid black;
+    background-color: black;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    box-shadow: 10px 10px 5px #55013d;  
+}
+#p061 {
+    text-align: center;
+    border: 2px solid black;
+    background-color: black;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    box-shadow: 10px 10px 5px #55013d;  
+}
+
+#p062 {
+    text-align: center;
+    border: 2px solid black;
+    background-color: black;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    box-shadow: 10px 10px 5px #55013d; 
+}
+
+#p068 {
+    text-align: center;
+    border: 2px solid black;
+    background-color: black;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    box-shadow: 10px 10px 5px #55013d; 
+}
+
+#p069 {
+    text-align: center;
+    border: 2px solid black;
+    background-color: black;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    box-shadow: 10px 10px 5px #55013d; 
+}
+
+#p051{
+    text-align: center;
+    border: 2px solid black;
+    background-color: black;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    box-shadow: 10px 10px 5px #c56aab;  
+}
+
+#video001{
+    position: relative;
+    left: 200px;
+    width: 900px;
+}
+
+#parag_01 {
+    text-align: center;
+    border: 2px solid black;
+    background-color: black;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    box-shadow: 10px 10px 5px #a10575;  
+}
+#paragraph_002{
+    text-align: center;
+    border: 2px solid black;
+    background-color: black;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    box-shadow: 10px 10px 5px #ed06ac;  
+}
+
+#paragr_004 {
+    text-align: center;
+    border: 2px solid black;
+    background-color: black;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    box-shadow: 20px 10px 5px #bd65a4;  
+}
+
+#para900 {
+    text-align: center;
+    border: 2px solid black;
+    background-color: black;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    box-shadow: 20px 10px 5px #582f4d;  
+}
+
+#parag6 {
+    text-align: center;
+    border: 2px solid black;
+    background-color: black;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    box-shadow: 20px 10px 5px #b3ff25;
+}
+
+#t_twitter1 {
+    border: 1px solid;
+    width: 300px;
+    padding: 25px;
+    border-color: black;
+    text-shadow: 0 0 5px yellow, 0px -5px 5px red;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 10px 10px 5px #666666;
+    background-color: black;
+    color: rgb(58, 136, 245);
+    position: relative;
+    left: 500px;
+    animation: myRotateAnimation2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myRotateAnimation2 {
+    100%{transform: rotateZ(380deg);}
+}
+
+#ptwitter01 {
+    font-size: 40px;
+}
+
+#ptwitter10 {
+    font-size: 40px;
+}
+#ptwitter19 {
+    background: purple;
+    position: relative;
+    left: 270px;
+    margin: 0px;
+    padding: 30px;
+    text-align: center;
+    display: inline-block;
+    animation: myAnimation00559;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes myAnimation00559 {
+    1%{background-color: rgb(113, 44, 100);}
+    20%{background-color: rgb(199, 84, 167);}
+    40%{background-color: rgb(155, 80, 151);}
+    60%{background-color: rgb(192, 13, 132);}
+    50%{background-color: rgb(215, 148, 195);}
+    100%{background-color: purple;}
+}
+    
+#img070 {
+    position: relative;
+    float: right;
+    height: 300px;
+    width: 500px;
+    animation: myScale0001;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myScale0001 {
+    50% {transform: scale(0.1,1);}
+}
+
+
+
+#ptwitter03 {
+    font-size: 40px;
+}
+
+#ptwitter04 {
+    font-size: 40px;
+}
+
+#ptwitter05 {
+    font-size: 40px;
+}
+
+#img04 {
+    position: relative;
+    top: 40px;
+    left: 160px;
+    width: 1000px;
+    height: 300px;
+    animation: myScale040;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myScale040 {
+    50% {transform: scale(0.5,0.5);}
+
+}
+
+
+#ptwitter02 {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgb(86, 16, 139);
+
+}
+
+#ptwitter09 {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgb(86, 16, 139);
+}
+
+#ptwitter10 {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgb(86, 16, 139);
+}
+
+#ptwitter11 {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgb(86, 16, 139);
+}
+
+#ptwitter13 {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgb(86, 16, 139);
+}
+
+#ptwitter14 {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgb(86, 16, 139);
+}
+
+
+#ptwitter16 {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgb(86, 16, 139);
+}
+
+#ptwitter03 {
+    background: purple;
+    position: relative;
+    margin: 0px;
+    padding: 30px;
+    text-align: center;
+    display: inline-block;
+    animation: myAnimation003;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes myAnimation003 {
+    1%{background-color: rgb(113, 44, 100);}
+    20%{background-color: rgb(199, 84, 167);}
+    40%{background-color: rgb(155, 80, 151);}
+    60%{background-color: rgb(192, 13, 132);}
+    50%{background-color: rgb(215, 148, 195);}
+    100%{background-color: purple;}
+}
+
+#ptwitter15 {
+    background: purple;
+    position: relative;
+    margin: 0px;
+    padding: 30px;
+    text-align: center;
+    display: inline-block;
+    animation: myAnimation0056;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes myAnimation0056 {
+    1%{background-color: rgb(113, 44, 100);}
+    20%{background-color: rgb(199, 84, 167);}
+    40%{background-color: rgb(155, 80, 151);}
+    60%{background-color: rgb(192, 13, 132);}
+    50%{background-color: rgb(215, 148, 195);}
+    100%{background-color: purple;}
+}
+
+#ptwitter17 {
+    background: purple;
+    position: relative;
+    margin: 0px;
+    padding: 30px;
+    text-align: center;
+    display: inline-block;
+    animation: myAnimation0057;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes myAnimation0057 {
+    1%{background-color: rgb(113, 44, 100);}
+    20%{background-color: rgb(199, 84, 167);}
+    40%{background-color: rgb(155, 80, 151);}
+    60%{background-color: rgb(192, 13, 132);}
+    50%{background-color: rgb(215, 148, 195);}
+    100%{background-color: purple;}
+}
+
+#ptwitter18 {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgb(86, 16, 139);
+}
+#ptwitter12 {
+    background: purple;
+    position: relative;
+    margin: 0px;
+    padding: 30px;
+    text-align: center;
+    display: inline-block;
+    animation: myAnimation0055;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes myAnimation0055 {
+    1%{background-color: rgb(113, 44, 100);}
+    20%{background-color: rgb(199, 84, 167);}
+    40%{background-color: rgb(155, 80, 151);}
+    60%{background-color: rgb(192, 13, 132);}
+    50%{background-color: rgb(215, 148, 195);}
+    100%{background-color: purple;}
+}
+
+
+#title11{
+    position: relative;
+    left: 370px;
+    display: inline-block;
+    animation: myAnimation0111;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes myAnimation0111 {
+    1%{background-color: rgb(164, 222, 31);}
+    20%{background-color: rgb(131, 142, 51);}
+    40%{background-color: rgb(152, 168, 43);}
+    60%{background-color: rgb(22, 171, 151);}
+    50%{background-color: rgb(197, 236, 137);}
+    100%{background-color: rgb(73, 108, 2);}
+}
+
+#prg1 {
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgb(230, 244, 37);
+}
+
+#video03{
+    position: relative;
+    left: 150px;
+    width: 1000px;
+}
+
+#imagine2 {
+    width: 1270px;
+}
+
+#title40 {
+    background: rgb(26, 137, 228);
+    position: relative;
+    margin: 0px;
+    padding: 30px;
+    left: 500px;
+    display: inline-block;
+    animation: myAnimation086;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myAnimation086 {
+    1%{background-color: rgb(8, 64, 194);}
+    20%{background-color: rgb(21, 192, 189);}
+    40%{background-color: rgb(38, 38, 112);}
+    60%{background-color: rgb(103, 122, 187);}
+    50%{background-color: rgb(15, 15, 80);}
+    100%{background-color: rgb(113, 199, 236);}
+}
+
+#prg40{
+    color: aliceblue;
+    position: sticky;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+#prg499 {
+    color: aliceblue;
+    position: sticky;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+
+#prg500 {
+    color: aliceblue;
+    position: sticky;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+
+#prg501 {
+    color: aliceblue;
+    position: sticky;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+
+#prg502{
+    color: aliceblue;
+    position: sticky;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+
+#prg503 {
+    color: aliceblue;
+    position: sticky;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+
+#prg504 {
+    color: aliceblue;
+    position: sticky;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+#title41{
+    background: purple;
+    position: relative;
+    margin: 0px;
+    padding: 30px;
+    left: 610px;
+    display: inline-block;
+    animation: myAnimation087;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myAnimation087 {
+    1%{background-color: rgb(8, 64, 194);}
+    20%{background-color: rgb(21, 192, 189);}
+    40%{background-color: rgb(38, 38, 112);}
+    60%{background-color: rgb(103, 122, 187);}
+    50%{background-color: rgb(15, 15, 80);}
+    100%{background-color: rgb(113, 199, 236);}
+}
+
+#title42 {
+    background: purple;
+    position: relative;
+    margin: 0px;
+    padding: 30px;
+    left: 570px;
+    display: inline-block;
+    animation: myAnimation088;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myAnimation088 {
+    1%{background-color: rgb(8, 64, 194);}
+    20%{background-color: rgb(21, 192, 189);}
+    40%{background-color: rgb(38, 38, 112);}
+    60%{background-color: rgb(103, 122, 187);}
+    50%{background-color: rgb(15, 15, 80);}
+    100%{background-color: rgb(113, 199, 236);}
+}
+
+#title43 {
+    background: purple;
+    position: relative;
+    margin: 0px;
+    padding: 30px;
+    left: 570px;
+    display: inline-block;
+    animation: myAnimation089;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myAnimation089 {
+    1%{background-color: rgb(8, 64, 194);}
+    20%{background-color: rgb(21, 192, 189);}
+    40%{background-color: rgb(38, 38, 112);}
+    60%{background-color: rgb(103, 122, 187);}
+    50%{background-color: rgb(15, 15, 80);}
+    100%{background-color: rgb(113, 199, 236);}
+}
+
+#title44{
+    background: purple;
+    position: relative;
+    margin: 0px;
+    padding: 30px;
+    left: 600px;
+    display: inline-block;
+    animation: myAnimation90;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myAnimation90 {
+    1%{background-color: rgb(8, 64, 194);}
+    20%{background-color: rgb(21, 192, 189);}
+    40%{background-color: rgb(38, 38, 112);}
+    60%{background-color: rgb(103, 122, 187);}
+    50%{background-color: rgb(15, 15, 80);}
+    100%{background-color: rgb(113, 199, 236);}
+}
+
+#title45 {
+    background: purple;
+    position: relative;
+    margin: 0px;
+    padding: 30px;
+    left: 450px;
+    display: inline-block;
+    animation: myAnimation91;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myAnimation91 {
+    1%{background-color: rgb(8, 64, 194);}
+    20%{background-color: rgb(21, 192, 189);}
+    40%{background-color: rgb(38, 38, 112);}
+    60%{background-color: rgb(103, 122, 187);}
+    50%{background-color: rgb(15, 15, 80);}
+    100%{background-color: rgb(113, 199, 236);}
+}
+
+#prg41 {
+    color: aliceblue;
+    position: sticky;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0;  
+}
+
+
+#paraghp9 {
+    color: aliceblue;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+
+#paraghp10 {
+    color: aliceblue;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+
+#paraghp11 {
+    color: aliceblue;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+#paraghp12 {
+    color: aliceblue;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+
+#paraghp13 {
+    color: aliceblue;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+
+#paraghp14 {
+    color: aliceblue;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+
+#paraghp15{
+    color: aliceblue;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+
+#paraghp16{
+    color: aliceblue;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+
+#paraghp17 {
+    color: aliceblue;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+#paraghp18 {
+    color: aliceblue;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+#paraghp22 {
+    color: aliceblue;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+
+#paraghp23{
+    color: aliceblue;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+
+#parghph078 {
+    color: aliceblue;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+#parag774 {
+    color: aliceblue;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+#parag779 {
+    color: aliceblue;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+#parag5342 {
+    color: aliceblue;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+#parag773 {
+    color: aliceblue;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+
+#parag778 {
+    color: aliceblue;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+#paraghp19 {
+    color: aliceblue;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+
+#paraghp20 {
+    color: aliceblue;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+
+
+#paraghp34 {
+    color: aliceblue;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+#prg42 {
+    color: aliceblue;
+    position: sticky;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0;  
+}
+
+#prg43 {
+    color: aliceblue;
+    position: sticky;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0;  
+}
+
+#prgp9 {
+    color: aliceblue;
+    border: 2px solid black;
+    background-color: black;
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0;  
+}
+
+#prgp8 {
+    color: aliceblue;
+    border: 2px solid black;
+    background-color: black;
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0;  
+}
+
+#prgp7{
+    color: aliceblue;
+    border: 2px solid black;
+    background-color: black;
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px #0bb9e0; 
+}
+#t_1010{
+    border: 1px solid;
+    width: 300px;
+    padding: 25px;
+    border-color: black;
+    display: inline-block;
+    text-shadow: 0 0 5px yellow, 0px -5px 5px red;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 10px 10px 5px #666666;
+    background-color: black;
+    color: white;
+    position: relative;
+    left: 510px;
+    animation: myRotateAnimation1010;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myRotateAnimation1010 {
+    100%{transform: rotateZ(320deg);}
+}
+
+#prg1041 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: center;
+    position: sticky;
+    box-shadow: 10px 10px 5px rgb(72, 101, 233);
+}
+#parag8009 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: center;
+    position: sticky;
+    box-shadow: 10px 10px 5px rgb(72, 101, 233);
+}
+
+#parag8010 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: center;
+    position: sticky;
+    box-shadow: 10px 10px 5px rgb(72, 101, 233);
+}
+
+#p8011 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: center;
+    position: sticky;
+    box-shadow: 10px 10px 5px rgb(72, 101, 233);
+}
+
+#title8012 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: center;
+    position: sticky;
+    box-shadow: 10px 10px 5px rgb(72, 101, 233);
+}
+
+#title8013 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: center;
+    position: sticky;
+    box-shadow: 10px 10px 5px rgb(72, 101, 233);
+}
+
+#parag8014 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: center;
+    position: sticky;
+    box-shadow: 10px 10px 5px rgb(72, 101, 233);
+}
+
+#parag8019 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgb(72, 101, 233);
+}
+
+#parag0067 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgb(72, 101, 233);
+}
+
+#parag0068 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgb(72, 101, 233);
+}
+
+#parag0069 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgb(72, 101, 233);
+}
+
+#parag0070 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgb(72, 101, 233);
+}
+#parag0028 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgb(72, 101, 233);
+}
+
+#parag0029 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgb(72, 101, 233);
+}
+
+#parag0030 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgb(72, 101, 233);
+}
+
+#title47 {
+    background: rgb(51, 186, 231);
+    position: relative;
+    margin: 0px;
+    padding: 30px;
+    left: 450px;
+    display: inline-block;
+    animation: myAnimation92;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myAnimation92 {
+    1%{background-color: rgb(8, 64, 194);}
+    20%{background-color: rgb(21, 192, 189);}
+    40%{background-color: rgb(38, 38, 112);}
+    60%{background-color: rgb(103, 122, 187);}
+    50%{background-color: rgb(15, 15, 80);}
+    100%{background-color: rgb(113, 199, 236);}
+}
+
+#title7432 {
+    background: rgb(51, 186, 231);
+    position: relative;
+    margin: 0px;
+    padding: 30px;
+    left: 150px;
+    display: inline-block;
+    animation: myAnimation900;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myAnimation900 {
+    1%{background-color: rgb(8, 64, 194);}
+    20%{background-color: rgb(21, 192, 189);}
+    40%{background-color: rgb(38, 38, 112);}
+    60%{background-color: rgb(103, 122, 187);}
+    50%{background-color: rgb(15, 15, 80);}
+    100%{background-color: rgb(113, 199, 236);}
+}
+#img07 {
+    position: relative;
+    left: 350px;
+    width: 600px;
+    height: 300px;
+    animation: myScale070;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myScale070 {
+    50% {transform: scale(0.5,0.5);}
+
+}
+
+#prg1042 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: left;
+    position: sticky;
+    box-shadow: 10px 10px 5px rgb(16, 47, 187);
+}
+
+#prg1046 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: left;
+    position: sticky;
+    box-shadow: 10px 10px 5px rgb(16, 47, 187);
+}
+
+#prg1047 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: left;
+    position: sticky;
+    box-shadow: 10px 10px 5px rgb(16, 47, 187);
+}
+
+#prg1048 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: left;
+    position: sticky;
+    box-shadow: 10px 10px 5px rgb(16, 47, 187);
+}
+
+#prg1049 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: left;
+    box-shadow: 10px 10px 5px rgb(16, 47, 187);
+}
+
+#prg1050 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: left;
+    box-shadow: 10px 10px 5px rgb(16, 47, 187);
+}
+
+#prg1051 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: left;
+    box-shadow: 10px 10px 5px rgb(16, 47, 187);
+}
+
+#prg1052 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: left;
+    box-shadow: 10px 10px 5px rgb(16, 47, 187);
+}
+
+#prg1053{
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: left;
+    position: sticky;
+    box-shadow: 10px 10px 5px rgb(16, 47, 187);
+}
+
+#prg1054 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: left;
+    position: sticky;
+    box-shadow: 10px 10px 5px rgb(16, 47, 187);
+}
+
+#prg1055 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: left;
+    position: sticky;
+    box-shadow: 10px 10px 5px rgb(16, 47, 187);
+}
+
+#prg1056 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: left;
+    box-shadow: 10px 10px 5px rgb(16, 47, 187);
+}
+
+#prg1057 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: left;
+    box-shadow: 10px 10px 5px rgb(16, 47, 187);
+}
+
+#prg1058 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: left;
+    box-shadow: 10px 10px 5px rgb(16, 47, 187);
+}
+#image02 {
+    position: relative;
+    float: right;
+    left: 150px;
+    
+}
+
+#title020 {
+    background: rgb(16, 8, 163);
+    text-align: center;
+    margin: 0px;
+    position: relative;
+    left: 5px;
+    display: inline-block;
+    animation: myAnimation020;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes myAnimation020 {
+    1%{background-color: rgb(9, 50, 184);}
+    20%{background-color: rgb(11, 186, 163);}
+    40%{background-color: rgb(64, 88, 196);}
+    60%{background-color: rgb(20, 70, 145);}
+    50%{background-color: rgb(9, 138, 158);}
+    100%{background-color: rgb(79, 28, 219);}
+}
+
+
+#title0028 {
+    background: rgb(16, 8, 163);
+    text-align: center;
+    margin: 0px;
+    position: relative;
+    left: 5px;
+    display: inline-block;
+    animation: myAnimation0028;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes myAnimation0028 {
+    1%{background-color: rgb(9, 50, 184);}
+    20%{background-color: rgb(11, 186, 163);}
+    40%{background-color: rgb(64, 88, 196);}
+    60%{background-color: rgb(20, 70, 145);}
+    50%{background-color: rgb(9, 138, 158);}
+    100%{background-color: rgb(79, 28, 219);}
+}
+
+#title021{
+    background: rgb(16, 8, 163);
+    text-align: center;
+    margin: 0px;
+    position: relative;
+    left: 5px;
+    display: inline-block;
+    animation: myAnimation021;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+
+@keyframes myAnimation021 {
+    1%{background-color: rgb(9, 50, 184);}
+    20%{background-color: rgb(11, 186, 163);}
+    40%{background-color: rgb(64, 88, 196);}
+    60%{background-color: rgb(20, 70, 145);}
+    50%{background-color: rgb(9, 138, 158);}
+    100%{background-color: rgb(79, 28, 219);}
+}
+
+#title022 {
+    background: rgb(16, 8, 163);
+    text-align: center;
+    margin: 0px;
+    position: relative;
+    left: 5px;
+    display: inline-block;
+    animation: myAnimation022;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+
+@keyframes myAnimation022 {
+    1%{background-color: rgb(9, 50, 184);}
+    20%{background-color: rgb(11, 186, 163);}
+    40%{background-color: rgb(64, 88, 196);}
+    60%{background-color: rgb(20, 70, 145);}
+    50%{background-color: rgb(9, 138, 158);}
+    100%{background-color: rgb(79, 28, 219);}
+}
+
+#title0030 {
+    background: rgb(16, 8, 163);
+    text-align: center;
+    margin: 0px;
+    position: relative;
+    left: 5px;
+    display: inline-block;
+    animation: myAnimation022;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes myAnimation022 {
+    1%{background-color: rgb(9, 50, 184);}
+    20%{background-color: rgb(11, 186, 163);}
+    40%{background-color: rgb(64, 88, 196);}
+    60%{background-color: rgb(20, 70, 145);}
+    50%{background-color: rgb(9, 138, 158);}
+    100%{background-color: rgb(79, 28, 219);}
+}
+
+#title0031 {
+    background: rgb(16, 8, 163);
+    text-align: center;
+    margin: 0px;
+    position: relative;
+    left: 5px;
+    display: inline-block;
+    animation: myAnimation022;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes myAnimation022 {
+    1%{background-color: rgb(9, 50, 184);}
+    20%{background-color: rgb(11, 186, 163);}
+    40%{background-color: rgb(64, 88, 196);}
+    60%{background-color: rgb(20, 70, 145);}
+    50%{background-color: rgb(9, 138, 158);}
+    100%{background-color: rgb(79, 28, 219);}
+}
+
+#prg1043 {
+    border: 2px solid black;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgb(11, 42, 184);
+}
+
+#image03 {
+    position: relative;
+    float: right;
+    left: 20px;
+    width: 700px;
+}
+
+form {
+    border: 1px solid #1b33cd;
+    border-radius: 20px;
+  }
+.container {
+    padding: 25px;
+    background-color: transparent;
+  }
+
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px #f7f9fa;
+    box-sizing: border-box;
+  }
+
+
+input[type=submit] {
+    background-color: #3513be;
+    color: white;
+    border: none;
+  }
+
+input[type=submit]:hover {
+    opacity: 0.7;
+  }
+
+#photo2 {
+    position: relative;
+    float: right;
+    width: 270px;
+}
+
+#button1, #button2, #button3, a {
+    text-decoration: none;
+    color: white;
+}
+
+#title222 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: center;
+    position: sticky;
+    box-shadow: 10px 10px 5px rgb(72, 101, 233);
+}
+
+#prg856 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: center;
+    position: sticky;
+    box-shadow: 10px 10px 5px rgb(72, 101, 233);
+}
+
+#prg857 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 1, 1);
+    color: white;
+    text-align: center;
+    position: sticky;
+    box-shadow: 10px 10px 5px rgb(72, 101, 233);
+}
+
+#photo9999 {
+    position: relative;
+    float: right;
+    width: 500px;
+}
+
+#t9 {
+    background: purple;
+    text-align: center;
+    margin: 0px;
+    display: inline-block;
+    animation: myAnima999;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes myAnima999 {
+    1%{background-color: beige;}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    50%{background-color: blue;}
+    100%{background-color: purple;}
+}
+
+titlle99 {
+    background: purple;
+    text-align: center;
+    margin: 0px;
+    display: inline-block;
+    animation: myAnima9908;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes myAnima9908 {
+    1%{background-color: beige;}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    50%{background-color: blue;}
+    100%{background-color: purple;}
+}
+
+#title0990 {
+    background: purple;
+    text-align: center;
+    margin: 0px;
+    display: inline-block;
+    animation: myAnima9905;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes myAnima9905 {
+    1%{background-color: beige;}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    50%{background-color: blue;}
+    100%{background-color: purple;}
+}
+#title0991 {
+    background: purple;
+    text-align: center;
+    margin: 0px;
+    display: inline-block;
+    animation: myAnima9908;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes myAnima9908 {
+    1%{background-color: beige;}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    50%{background-color: blue;}
+    100%{background-color: purple;}
+}
+#title0996 {
+    background: purple;
+    text-align: center;
+    margin: 0px;
+    display: inline-block;
+    animation: myAnima99007;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes myAnima99007 {
+    1%{background-color: beige;}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    50%{background-color: blue;}
+    100%{background-color: purple;}
+}
+#title0997 {
+    background: purple;
+    text-align: center;
+    margin: 0px;
+    display: inline-block;
+    animation: myAnima99003;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes myAnima99003 {
+    1%{background-color: beige;}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    50%{background-color: blue;}
+    100%{background-color: purple;}
+}
+
+#tit023 {
+    background: purple;
+    text-align: center;
+    margin: 0px;
+    display: inline-block;
+    animation: myAnima99002;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes myAnima99002 {
+    1%{background-color: beige;}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    50%{background-color: blue;}
+    100%{background-color: purple;}
+}
+#title0992 {
+    background: purple;
+    text-align: center;
+    margin: 0px;
+    display: inline-block;
+    animation: myAnima99009;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes myAnima99009 {
+    1%{background-color: beige;}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    50%{background-color: blue;}
+    100%{background-color: purple;}
+}
+
+#tit08 {
+    background: purple;
+    text-align: center;
+    margin: 0px;
+    display: inline-block;
+    animation: myAnima9906;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes myAnima9906 {
+    1%{background-color: beige;}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    50%{background-color: blue;}
+    100%{background-color: purple;}
+}
+
+#photo9999{
+position: relative;
+float: right;
+height: 300px;
+width: 500px;
+animation: myScale00022;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
+
+@keyframes myScale00022 {
+50% {transform: scale(0.1,1);}
+}
+
+#imagine9 {
+position: relative;
+float: right;
+width: 400px;
+animation: myScale00023;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
+
+@keyframes myScale00023 {
+50% {transform: scale(0.1,1);}
+}
+
+#tesla3 {
+position: relative;
+float: right;
+width: 400px;
+animation: myScale00024;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
+
+@keyframes myScale00024 {
+50% {transform: scale(0.1,1);}
+}
+
+#prg0860{
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px 5px #666666;
+}
+
+#prg0861 {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px 5px #666666; 
+}
+
+#prg0862 {
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px 5px #666667;
+}
+
+#prg0869 {
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px 5px #666667;
+}
+
+#prg0870 {
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    box-shadow: 10px 10px 5px #666667;
+}
+
+#prg0871 {
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px 5px #666667;
+}
+
+#prg0872 {
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px 5px #666667;
+}
+
+#prg0873 {
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px 5px #666667;
+}
+
+#video020 {
+    position: relative;
+    left: 100px;
+    width: 1000px;
+}
